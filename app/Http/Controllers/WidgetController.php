@@ -43,6 +43,7 @@ class WidgetController extends Controller
                     'widget_name' => $widget_name,
                     'warning' => $datas['warning'],
                     'datas' => $datas['data'] ?? [],
+                    'cssClass' => $datas['warning'] == 'Y' ? 'crimson' : ''
                 ];
             });
 
