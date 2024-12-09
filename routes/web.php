@@ -12,3 +12,4 @@ Route::get('/', function () {
 Route::get('/farms', [FarmController::class, 'index'])->name('farms');
 Route::get('/devices', [DeviceController::class, 'index'])->name('devices');
 Route::get('/widgets/{farm_idx?}', [WidgetController::class, 'index'])->name('widgets')->where(['farm_idx' => '[0-9]+']);
+Route::get('/widgets/brokendevice', [WidgetController::class, 'brokenDevice'])->name('brokendevice');
